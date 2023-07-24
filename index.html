@@ -34,6 +34,39 @@
             background-color: #0056b3;
             text-decoration: none;
         }
+
+        .styled-divider {
+    border-top: 2px solid #333; /* Replace #333 with your desired color */
+    margin: 20px 0; /* Adjust the margin as needed */
+}
+        /* Responsive Styling */
+        @media screen and (max-width: 768px) {
+            /* Adjust font size for smaller screens */
+            body {
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .form-link {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            /* Further adjust font size for even smaller screens */
+            body {
+                font-size: 14px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            .form-link {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+        }
     </style>
     <script>
         var popupWindow;
@@ -77,8 +110,13 @@
     <p>
         These forms are compulsory to fill out before accessing the other screening forms. After completing these forms, you can access the remaining screening forms from the links below.
     </p>
+
     <p>
-        <ul class="form-list">
+        These forms are compulsory to fill out before accessing the other screening forms. After completing these forms, you can access the remaining screening forms from the links below.
+    </p>
+    <hr class="styled-divider">
+    <h2>Other Forms:</h2>
+        <ul class="form-list others">
         <!-- Add the same class form-item to other forms -->
         <li class="form-item">
             <strong>Alcohol Screening Questionnaire (AUDIT)</strong>
@@ -126,6 +164,5 @@
             <a class="form-link" href="#" onclick="return openFormPopup('https://forms.gle/HKp6HJG1yQaFoDcj6');">PD Scale Form</a>
         </li>
     </ul>
-    </p>
 </body>
 </html>
