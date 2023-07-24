@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Psychological Screening Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .form-list {
+            list-style: none;
+            padding: 0;
+        }
+        .form-item {
+            margin-bottom: 15px;
+        }
+        .form-link {
+            display: inline-block;
+            background-color: #007BFF;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .form-link:hover {
+            background-color: #0056b3;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        var popupWindow;
+
+        function openFormPopup(url) {
+            popupWindow = window.open(url, 'FormPopup', 'width=800, height=600, resizable=yes, scrollbars=yes');
+            return false;
+        }
+
+        function closeFormPopup() {
+            if (popupWindow) {
+                popupWindow.close();
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Psychological Screening Forms</h1>
+    <p>
+       The below-listed screening questionnaires and assessments are used to evaluate different aspects of an individual's well-being:
+    </p>
+
+    <ul class="form-list">
+        <li class="form-item">
+            <strong>Consent Form (IMPORTANT)</strong>
+            <p>Description: The Consent Form is an essential document used to inform participants about the purpose, procedures, and risks associated with research or assessment activities.</p>
+            <a class="form-link" href="#" onclick="return openFormPopup('https://forms.gle/ZbdXF8jsB6owG3gKA');">Consent Form</a>
+        </li>
+        <li class="form-item">
+            <strong>SCL-90</strong>
+            <p>Description: The Symptom Checklist-90 (SCL-90) is a self-report inventory used to evaluate a broad range of psychological symptoms and distress in individuals.</p>
+            <a class="form-link" href="#" onclick="return openFormPopup('https://forms.gle/yMJh5uNMd1frHqok8');">SCL-90 Form</a>
+        </li>
+        <li class="form-item">
+            <strong>PCL-R</strong>
+            <p>Description: The Psychopathy Checklist-Revised (PCL-R) is a comprehensive tool used to evaluate personality traits and behaviors associated with psychopathy.</p>
+            <a class="form-link" href="#" onclick="return openFormPopup('https://forms.gle/NeoQ2TZ69Euor69F9');">PCL-R Form</a>
+        </li>
+    </ul>
+
+    <p>
+        These forms are compulsory to fill out before accessing the other screening forms. After completing these forms, you can access the remaining screening forms from the links below.
+    </p>
+    <p>
+        <a class="form-link" href="alcohol_screening.html" target="_blank">Alcohol Screening Questionnaire (AUDIT)</a>
+        <a class="form-link" href="tipi.html" target="_blank">TIPI</a>
+        <a class="form-link" href="assist_screening.html" target="_blank">Assist Screening Tool</a>
+        <a class="form-link" href="dast_10.html" target="_blank">DAST-10</a>
+        <a class="form-link" href="self_efficacy.html" target="_blank">Self Efficacy</a>
+        <a class="form-link" href="trauma_screen.html" target="_blank">Trauma Screen</a>
+        <a class="form-link" href="psychological_functioning.html" target="_blank">Psychological Functioning</a>
+        <a class="form-link" href="index_of_self_esteem.html" target="_blank">Index of Self Esteem (ISE)</a>
+        <a class="form-link" href="pd_scale.html" target="_blank">PD Scale</a>
+    </p>
+</body>
+</html>
